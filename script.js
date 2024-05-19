@@ -112,12 +112,4 @@ class ThemePark {
         );
 
         // Draw attractions
-        this.attractions.forEach(attraction => {
-            this.context.drawImage(attraction.img, attraction.x * this.gridSize, attraction.y * this.gridSize, this.gridSize, this.gridSize);
-        });
 
-        requestAnimationFrame(() => this.update());
-    }
-}
-
-const park = new ThemePark();
